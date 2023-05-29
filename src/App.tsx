@@ -2,7 +2,7 @@ import React from 'react';
 import Avatar from 'react-avatar';
 import './App.css';
 
-const MAX_AVATARS_DISPLAYED = 5;
+const MAX_AVATARS_DISPLAYED = 6;
 
 const AvatarRow: React.FC<{ avatars: string[] }> = ({ avatars }) => {
   const displayedAvatars = avatars.slice(0, MAX_AVATARS_DISPLAYED);
@@ -49,7 +49,7 @@ const App: React.FC = () => {
 
   return (
     <div className="App">
-      <h1>Avatar Row</h1>
+      <h1 className='text-center'>Avatar Row</h1>
       <AvatarRow avatars={avatarUrls} />
     </div>
   );
